@@ -14,7 +14,7 @@ cd Binance-Market-Maker-JS
 ```
 
 **Parameters**
-* `./binance_market_maker_js.sh` takes in 6 arguments;
+`./binance_market_maker_js.sh` takes in 6 required arguments;
 * `--apiKey=`: Your API Key
 * `--apiSecret=`: Your API Secret
 * `--spread=`: The spread percentage on the asset you would like to market make on
@@ -29,9 +29,9 @@ It will recalculate the spread and orders, when either your buy or sell maker or
 
 For example given an order book that looks this;
 ```
-16.8	|
-16.7	| -- sell orders
-16.5	| -- (your order) (s_1)
+16.8	| -- (your order) (s_1)
+15.8	| -- sell orders
+15.7	|
 
 15.5 	| -- Last price traded
 
