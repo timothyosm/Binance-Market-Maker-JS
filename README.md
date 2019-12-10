@@ -6,12 +6,12 @@ Market making bot for binance, written in JavaScript
 git clone https://github.com/Dylan-Phoon/Binance-Market-Maker-JS
 cd Binance-Market-Maker-JS
 chmod u+x ./install.sh
-. ./install.sh
+./install.sh
 ```
 
 **Quick start:**
 ```
-. ./binance_market_maker_js.sh --apiKey=<your API Key> --apiSecret=<your API Secret> --spread=3 --exposure=2 --base=BTC --stock=ETH
+./binance_market_maker_js.sh --apiKey=<your API Key> --apiSecret=<your API Secret> --spread=3 --exposure=2 --base=BTC --stock=ETH
 ```
 
 **Parameters**
