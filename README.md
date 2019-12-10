@@ -5,22 +5,24 @@ Market making bot for binance, written in JavaScript
 ```
 git clone https://github.com/Dylan-Phoon/Binance-Market-Maker-JS
 cd Binance-Market-Maker-JS
-./install.sh
+chmod u+x ./install.sh
+. ./install.sh
 ```
 
 **Quick start:**
 ```
-./binance_market_maker_js.sh --apiKey=<your API Key> --apiSecret=<your API Secret> --spread=3 --exposure=2 --base=BTC --stock=ETH
+. ./binance_market_maker_js.sh --apiKey=<your API Key> --apiSecret=<your API Secret> --spread=3 --exposure=2 --base=BTC --stock=ETH
 ```
 
 **Parameters**
+
 `./binance_market_maker_js.sh` takes in 6 required arguments;
 * `--apiKey=`: Your API Key
 * `--apiSecret=`: Your API Secret
 * `--spread=`: The spread percentage on the asset you would like to market make on
-* `--exposure=`: The maximum percentage of your account you want in the order book at any given time
-* `--base=`: The base asset (e.g. in ETHBTC, BTC is the base asset)
-* `--stock=`: The stock asset (e.g. in ETHBTC, ETH is the stock asset)
+* `--exposure= or -e=`: The maximum percentage of your account you want in the order book at any given time
+* `--base= or -b=`: The base asset (e.g. in ETHBTC, BTC is the base asset)
+* `--stock= or -s=`: The stock asset (e.g. in ETHBTC, ETH is the stock asset)
 
 ### How it works
 
