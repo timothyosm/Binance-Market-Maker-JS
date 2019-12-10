@@ -14,13 +14,13 @@ cd Binance-Market-Maker-JS
 ```
 
 **Parameters**
-`./binance_market_maker_js.sh` takes in 6 arguments;
-`--apiKey=`: Your API Key
-`--apiSecret=`: Your API Secret
-`--spread=`: The spread percentage on the asset you would like to market make on
-`--exposure=`: The maximum percentage of your account you want in the order book at any given time
-`--base=`: The base asset (e.g. in ETHBTC, BTC is the base asset)
-`--stock=`: The stock asset (e.g. in ETHBTC, ETH is the stock asset)
+* `./binance_market_maker_js.sh` takes in 6 arguments;
+* `--apiKey=`: Your API Key
+* `--apiSecret=`: Your API Secret
+* `--spread=`: The spread percentage on the asset you would like to market make on
+* `--exposure=`: The maximum percentage of your account you want in the order book at any given time
+* `--base=`: The base asset (e.g. in ETHBTC, BTC is the base asset)
+* `--stock=`: The stock asset (e.g. in ETHBTC, ETH is the stock asset)
 
 ### How it works
 
@@ -47,7 +47,7 @@ If someone then does a single market buy up to 17, b_1 will be canceled, s_1 wil
 18.00	| -- (your new order) (s_2)
 
 17.00	| -- Last price traded
- 
+
 16.00	| -- (your new order) (b_2)
 14.124 	| -- buy orders 
 12.5	|
@@ -64,5 +64,4 @@ Stock asset balance (s) = 15
 
 buy order amount = b(10) * (e(1) / 100)
 sell order amount = s(15) * (e(1) / 100)  
-
 ```
