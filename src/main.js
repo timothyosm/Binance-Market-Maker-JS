@@ -58,6 +58,7 @@ const orders = {
 // Listen to our trades
 // If one of our buys gets filled, then cancel all orders 
 // and enter new orders with a recalculated spread
+let rebalancing = false;
 client.ws.user(async (msg) => {
     if (msg.eventType === "executionReport") {
         if ((msg.orderStatus === "PARTIALLY_FILLED" ||
